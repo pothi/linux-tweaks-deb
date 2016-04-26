@@ -91,7 +91,7 @@ chsh --shell /usr/bin/zsh
 
 #### Update Pathogen (optional)
 echo 'Updating Pathogen (for VIM)'
-wget /root/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+wget -q -O /root/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 if [ -s /root/pathogen.vim ]; then
 	mv /root/pathogen.vim /usr/share/vim/vim74/autoload/pathogen.vim
 else
