@@ -91,7 +91,12 @@ chsh --shell /usr/bin/zsh
 
 #### Update Pathogen (optional)
 echo 'Updating Pathogen (for VIM)'
-curl -Sso /usr/share/vim/vim74/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+wget /root/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+if [ -s /root/pathogen.vim ]; then
+	mv /root/pathogen.vim /usr/share/vim/vim74/autoload/pathogen.vim
+else
+	rm /root/pathogen.vim
+fi
 
 # Setup some helper tools
 echo 'Downloading ps_mem.py, mysqltuner and tuning-primer, etc'
