@@ -7,7 +7,8 @@ if [ -f /etc/zsh/zshrc ]; then
 fi
 
 # for grep to output with colors
-export GREP_OPTIONS='--color=always'
+# GREP_OPTIONS is deprecated as of Apr 2016 in Ubuntu 16.04
+# export GREP_OPTIONS='--color=always'
 
 # for visudo, svn and others
 export EDITOR=vim
