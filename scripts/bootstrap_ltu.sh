@@ -47,9 +47,9 @@ echo 'Install AWS CLI tools'
 pip install awscli
 
 # get the source from Github
-echo 'Downloading Linux Tweaks from Github repo at https://github.com/pothi/linux-tweaks-ubuntu-14-04'
+echo 'Downloading Linux Tweaks from Github repo at https://github.com/pothi/linux-tweaks-ubuntu-16-04'
 rm -rf /root/ltu
-git clone --recursive https://github.com/pothi/linux-tweaks-ubuntu-14-04.git /root/ltu
+git clone --recursive https://github.com/pothi/linux-tweaks-ubuntu-16-04.git /root/ltu
 
 # Shell related configs
 cp /root/ltu/tiny_* /etc/profile.d/
@@ -114,7 +114,7 @@ mv wp-cli.phar /usr/local/bin/wp
 
 # take a backup, after doing everything
 echo 'Taking a final backup'
-LT_DIRECTORY="/root/backups/etc-$(date +%F)-linux-tweaks-ubuntu1404-after"
+LT_DIRECTORY="/root/backups/etc-$(date +%F)-linux-tweaks-ubuntu1604-after"
 if [ ! -d "$LT_DIRECTORY" ]; then
 	cp -a /etc $LT_DIRECTORY
 fi
