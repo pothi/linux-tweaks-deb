@@ -46,6 +46,12 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y zsh zsh-doc \
 echo 'Install AWS CLI tools'
 pip install awscli
 
+# setup timezone
+timedatectl set-timezone UTC
+if [ $? != 0 ]; then
+	echo 'Error setting timezone'
+fi
+
 # get the source from Github
 echo 'Downloading Linux Tweaks from Github repo at https://github.com/pothi/linux-tweaks-ubuntu-16-04'
 rm -rf /root/ltu
