@@ -95,7 +95,7 @@ echo 'export EDITOR=vim' >> /etc/skel/.zshrc
 echo 'export VISUAL=vim' >> /etc/skel/.zshrc
 
 # attempt to create a log directory, if not exists
-silent !mkdir ~/log > /dev/null 2>&1
+echo "set silent !mkdir ~/log > /dev/null 2>&1" >> /etc/skel/.vimrc
 # Change the path to viminfo; from ~/.viminfo to ~/log/viminfo
 echo "set viminfo+=n~/log/viminfo" >> /etc/skel/.vimrc
 
