@@ -78,6 +78,8 @@ cp /root/ltu/zshrc /etc/zsh/zshrc
 # Vim related configs
 cp /root/ltu/vimrc.local /etc/vim/vimrc.local
 cp -a /root/ltu/vim/* /usr/share/vim/vim74/
+git clone https://github.com/VundleVim/Vundle.vim.git /usr/share/vim/vim74/bundle/Vundle.vim
+git clone https://github.com/mattn/emmet-vim.git /usr/share/vim/vim74/bundle/emmet-vim
 
 # Misc files
 cp /root/ltu/tmux.conf /etc/tmux.conf
