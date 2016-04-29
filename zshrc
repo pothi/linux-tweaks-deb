@@ -11,8 +11,8 @@ export PROMPT="%B%(?..[%?] )%b%n@%U$(hostname -f | awk -F . '{print $2"."$3}')%u
 # PROMPT=%B%\(\?..\[%\?\]\ \)%b%n@%U$(hostname -f | awk -F $(hostname). '{print $2}')%u\>\  
 
 #-- History Tweaks --#
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_IGNORE_SPACE
@@ -34,7 +34,7 @@ alias l='ls --color=never --group-directories-first --classify'
 
 alias la='l --almost-all'
 alias ld='l -ld'
-alias ll='l -l' 
+alias ll='l -lh' 
 alias lh='l -lh'
 
 alias lal='l -l --almost-all'
@@ -50,7 +50,7 @@ alias c='cd'
 alias ping='ping -c 1'
 
 # Sed
-alias sed='/bin/sed --follow-symlinks'
+alias sedf='/bin/sed --follow-symlinks'
 
 ### Curl aliases ###
 ### Ref - http://curl.haxx.se/docs/manpage.html
