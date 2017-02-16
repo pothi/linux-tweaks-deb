@@ -7,8 +7,8 @@ promptinit
 prompt walters
 setopt PROMPT_SUBST
 export PROMPT="%B%(?..[%?] )%b%n@%U$(hostname -f | awk -F . '{print $2"."$3}')%u> "
-# PROMPT=%B%\(\?..\[%\?\]\ \)%b%n@%U%M%u\>\ 
-# PROMPT=%B%\(\?..\[%\?\]\ \)%b%n@%U$(hostname -f | awk -F $(hostname). '{print $2}')%u\>\  
+# export PROMPT=%B%\(\?..\[%\?\]\ \)%b%n@%U%M%u\>\ 
+# export PROMPT=%B%\(\?..\[%\?\]\ \)%b%n@%U$(hostname -f | awk -F $(hostname). '{print $2}')%u\>\  
 
 #-- History Tweaks --#
 HISTSIZE=10000
@@ -23,51 +23,6 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 #-- End of history tweaks --#
-
-# Aliases for `ls`
-
-alias ls='ls --color=never --group-directories-first --classify'
-alias l='ls --color=never --group-directories-first --classify'
-# use the following if --color=auto did not work
-# alias l='ls --color=always --group-directories-first --classify'
-# use --color=never, to turn off colors
-
-alias la='l --almost-all'
-alias ld='l -ld'
-alias ll='l -lh' 
-alias lh='l -lh'
-
-alias lal='l -l --almost-all'
-alias lla='l -l --almost-all'
-alias llh='l -lh'
-alias lah='l -h --almost-all'
-alias lalh='l -lh --almost-all'
-alias llah='l -lh --almost-all'
-
-# alias wl='wc -l'
-alias fm='free -m'
-alias c='cd'
-alias ping='ping -c 1'
-
-# Sed
-alias sedf='/bin/sed --follow-symlinks'
-
-### Curl aliases ###
-### Ref - http://curl.haxx.se/docs/manpage.html
-alias curli='curl -I'
-alias curlih='curl -I -H "Accept-Encoding:gzip,deflate"'
-alias curld='curl -H "Accept-Encoding:gzip,deflate" -s -D- -o /dev/null'
-
-# Explanation for the above
-# curli='curl --head' # strange character to replace --head
-# curlih='curl -I --header "Accept-Encoding:gzip,deflate"'
-# curld='curl -H "Accept-Encoding:gzip,deflate" --silent --dump-header - --output /dev/null'
-
-# Dig aliases
-alias digs='dig +short'
-alias digc='dig +short CNAME'
-alias digns='dig +short NS'
-alias digmx='dig +short MX'
 
 # For ctrl + arrow keys
 bindkey ';5D' backward-word
@@ -95,3 +50,9 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# alias to find the flag info
+# modified from https://coderwall.com/p/gtgxww/intuitive-flags-information-of-nginx
+
+if [ -f $HOME/.config/custom_aliases.sh ]; then
+    source $HOME/.config/custom_aliases.sh
+fi
