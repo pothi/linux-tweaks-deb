@@ -10,6 +10,6 @@ export HISTCONTROL=$HISTCONTROL:erasedups:ignorespace
 export EDITOR=vi
 export VISUAL=vi
 
-export PATH=/usr/local/bin:~/.composer/vendor/bin:$PATH
+export PATH=~/.npm-global/bin:~/.composer/vendor/bin:/usr/local/bin:$PATH
 
 ### end of custom exports by pothi ###
