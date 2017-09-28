@@ -1,4 +1,4 @@
 # fetch the email from .env file going forward
 [user]
-	name = Pothi Kalimuthu
-	email = user@example.com
+name = Pothi Kalimuthu
+email = user@example.com
