@@ -7,11 +7,11 @@ rm -rf /root/ltweaks &> /dev/null
 git clone $LTREPO /root/ltweaks
 
 # Common shell related configs
-cp /root/ltweaks/custom_aliases.sh /etc/profile.d/
-source /root/ltweaks/custom_aliases.sh
+cp /root/ltweaks/common-aliases.sh /etc/profile.d/
+source /root/ltweaks/common-aliases.sh
 
-cp /root/ltweaks/custom_exports.sh /etc/profile.d/
-source /root/ltweaks/custom_exports.sh
+cp /root/ltweaks/common-exports.sh /etc/profile.d/
+source /root/ltweaks/common-exports.sh
 
 # For ZSH
 # cp /root/ltweaks/zprofile /etc/zsh/zprofile

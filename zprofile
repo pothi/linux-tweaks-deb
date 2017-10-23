@@ -10,13 +10,6 @@ unsetopt global_rcs
 
 ### end of custom exports by pothi ###
 
-# import global custom exports
-if [ -f /etc/profile.d/custom_exports.sh ]; then
-    source /etc/profile.d/custom_exports.sh
-fi
-
-# import local custom exports
-if [ -f $HOME/.config/custom_exports.sh ]; then
-    source $HOME/.config/custom_exports.sh
-fi
-
+[[ -f ~/.config/checks.sh ]] && source ~/.config/checks.sh
+[[ -f ~/.config/common-exports.sh ]] && source ~/.config/common-exports.sh
+[[ -f ~/.config/common-aliases.sh ]] && source ~/.config/common-aliases.sh
