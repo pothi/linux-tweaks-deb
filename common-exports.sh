@@ -10,7 +10,7 @@ export VISUAL=vi
 export LANG="en_US.UTF-8"
 export LC_ALL=$LANG
 
-export GEM_HOME=~/gem
+export GEM_HOME=~/.gem
 
 # for history control - bash specific
 export HISTCONTROL=$HISTCONTROL:erasedups:ignorespace
@@ -28,7 +28,7 @@ export COMPOSER_PATH=~/.composer/vendor/bin
 export USER_PATH=~/bin:~/scripts
 
 # GEM
-export GEM_PATH=~/gem/bin
+export GEM_PATH=~/.gem/bin
 
 # python libraries installed as python install xyz --user
 export PYTHON_USER_PATH=~/Library/Python/2.7/bin
