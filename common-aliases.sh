@@ -6,11 +6,11 @@ alias sed='sed --follow-symlinks'
 [[ $IS_LINUX = 1 ]] && alias ls='ls --color=auto --group-directories-first --classify'
 
 alias l='ls'
-alias la='l --almost-all'
+alias la='l -a'
 alias ld='l -ldh'
 alias ll='l -lh' 
 
-alias lal='l -lh --almost-all'
+alias lal='l -lh -a'
 alias lla='lal'
 alias llh='ll'
 
