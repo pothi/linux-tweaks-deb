@@ -28,3 +28,6 @@ alias findinphp="find * -type f -name '*.php' -print | xargs grep -inr"
 # do not work: fuck!
 # alias ngx_flags="nginx -V 2>&1 | sed 's: --:\'$'\n\t&:g'"
 # alias echopath="echo $PATH | sed 's/:/\'$'\n/g'"
+
+# grep
+alias grep='grep --color=auto'

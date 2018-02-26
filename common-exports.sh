@@ -1,5 +1,5 @@
 # for grep to output with colors
-export GREP_OPTIONS='--color=auto'
+# export GREP_OPTIONS='--color=auto'
 
 # for visudo, svn and others
 export EDITOR=vi
