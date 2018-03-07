@@ -1,0 +1,17 @@
+### https://mariadb.com/kb/en/library/slow-query-log-overview/
+
+# in order to make the settings mentioned in this file to take higher precedence...
+# make sure you give higher number such as 99-slow.cnf
+
+# this is only for the mysqld standalone daemon
+[mysqld]
+
+#
+# Enable the slow query log to see queries with especially long duration
+slow_query_log = 1
+slow_query_log_file     = /var/log/mysql/mariadb-slow.log
+long_query_time = 3
+log_slow_rate_limit     = 1000
+log_slow_verbosity      = query_plan
+log-queries-not-using-indexes
+#
