@@ -1,0 +1,5 @@
+# stop mariadb, copy/move /var/lib/mysql/ib_logfile*, apply these changes and start mariadb
+
+[mysqld]
+innodb_log_file_size=1G
+
