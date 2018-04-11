@@ -3,3 +3,5 @@
 [mysqld]
 innodb_log_file_size=1G
 
+# to allow large uploads / queries
+max_allowed_packet = 128M
