@@ -4,4 +4,9 @@
 innodb_log_file_size=1G
 
 # to allow large uploads / queries
-max_allowed_packet = 128M
+max_allowed_packet  = 128M
+
+# log bin
+log_bin             = /var/log/mysql/mysql-bin.log
+expire_logs_days    = 10
+max_binlog_size     = 100M
