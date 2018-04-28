@@ -1,5 +1,7 @@
 # older at top
-alias sed='sed --follow-symlinks'
+
+# to be removed in the future
+# alias sed='sed --follow-symlinks'
 
 # ls
 [[ $IS_MAC = 1 ]] && alias ls='ls -F -G'
