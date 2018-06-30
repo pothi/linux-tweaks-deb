@@ -25,7 +25,7 @@ alias curll='curl -L'
 alias digs='dig +short'
 
 # PHP
-alias findinphp="find * -type f -name '*.php' -print | xargs grep -inr"
+alias findinphp="find ./ -type f -iname '*.php' -print0 | xargs -0 grep -inr"
 
 # do not work: fuck!
 # alias ngx_flags="nginx -V 2>&1 | sed 's: --:\'$'\n\t&:g'"
