@@ -38,7 +38,7 @@ export MAC_PORTS_PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin
 # npm
 export NPM_PATH=~/.npm-global/bin
 # yarn
-export PREFIX=~/.config/yarn/bin
+export PREFIX=~/.config/yarn
 
-export PATH=$PREFIX:$NPM_PATH:$PYTHON_USER_PATH:$GEM_PATH:$USER_PATH:$COMPOSER_PATH:$LOC_SBIN_PATH:$PATH
+export PATH=$PREFIX/bin:$NPM_PATH:$PYTHON_USER_PATH:$GEM_PATH:$USER_PATH:$COMPOSER_PATH:$LOC_SBIN_PATH:$PATH
 [[ $IS_MAC = 1 ]] && export PATH=$MAC_PORTS_PATH:$PATH
