@@ -36,9 +36,9 @@ export PYTHON_USER_PATH=~/Library/Python/2.7/bin
 export MAC_PORTS_PATH=/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin
 
 # npm
-export NPM_PATH=~/.npm-global/bin
+export CUSTOM_NPM_PATH=~/.npm-global/bin
 # yarn
-export PREFIX=~/.config/yarn
+# export PREFIX=~/.config/yarn
 
-export PATH=~/.local/bin:$PREFIX/bin:$NPM_PATH:$PYTHON_USER_PATH:$GEM_PATH:$USER_PATH:$COMPOSER_PATH:$LOC_SBIN_PATH:$PATH
+export PATH=~/.local/bin:$CUSTOM_NPM_PATH:$PYTHON_USER_PATH:$GEM_PATH:$USER_PATH:$COMPOSER_PATH:$LOC_SBIN_PATH:$PATH
 [[ $IS_MAC = 1 ]] && export PATH=$MAC_PORTS_PATH:$PATH
