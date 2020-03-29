@@ -11,3 +11,7 @@ log_bin             = hypermaster1
 expire_logs_days    = 10
 max_binlog_size     = 100M
 server_id           = 1
+
+# for laravel
+innodb_large_prefix = 1
+innodb_default_row_format = dynamic
