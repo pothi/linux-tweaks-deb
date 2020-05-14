@@ -15,3 +15,4 @@ server_id           = 1
 # for laravel
 innodb_large_prefix = 1
 innodb_default_row_format = dynamic
+group_concat_max_len = 1000000
