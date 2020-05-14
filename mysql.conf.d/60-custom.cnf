@@ -8,7 +8,7 @@ max_allowed_packet  = 128M
 
 # log bin
 log_bin             = hypermaster1
-expire_logs_days    = 10
+expire_logs_days    = 3
 max_binlog_size     = 100M
 server_id           = 1
 
