@@ -22,7 +22,7 @@ alias curlm='curl -H "Accept-Encoding:*" -s -D- -o /dev/null -A "Mozilla/5.0 (iP
 alias curll='curl -L'
 
 # Dig aliases
-alias digs='dig +short'
+alias digs='dig +short +noshort'
 
 # PHP
 alias findinphp="find ./ -type f -iname '*.php' -print0 | xargs -0 grep -inr"
