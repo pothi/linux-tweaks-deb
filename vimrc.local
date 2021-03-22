@@ -21,6 +21,9 @@ set expandtab
 set softtabstop=4
 " :%retab to replace existing tabs to spaces
 
+" https://stackoverflow.com/a/159066/1004587
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
 " indentation
 set autoindent
 set smartindent
@@ -163,5 +166,6 @@ au BufNewFile,BufRead nginx*.conf set filetype=nginx
 
 au BufRead,BufNewFile /etc/varnish/* set ft=vcl
 au BufNewFile,BufRead *.vcl setf vcl
+autocmd FileType vcl setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 " -----------------------------------------------------------------------------------------------
