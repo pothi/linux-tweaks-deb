@@ -1,6 +1,5 @@
 
-" set this in /etc/vimrc.local or directly in /etc/vimrc
-" preferably in your $HOME
+" set this in $HOME/.vimrc or directly in $HOME/.vim/vimrc
 
 " -----------------------------------------------------------------------------------------------
 
@@ -32,10 +31,6 @@ if has("autocmd")
 endif
 
 autocmd FileType html :setlocal sw=2 ts=2 sts=2 expandtab " Two spaces for HTML files "
-set list
-" set listchars=tab:>-
-" the following was inserted on 2017-10-09
-set listchars=tab:>-,trail:·,nbsp:.
 
 " automatically convert tabs into space upon writing into a file
 autocmd BufWrite * :retab
@@ -79,6 +74,9 @@ set updatecount=0 " no swap file creation
 " listchars
 " set list lcs=trail:·,tab:»·
 
+" type 'set list' in the normal / command mode to see the following chars.
+set listchars=tab:<->,trail:%,nbsp:.,eol:$
+
 " -----------------------------------------------------------------------------------------------
 
 " For CentOS and its derivatives
@@ -92,14 +90,7 @@ set path+=.,/etc/varnish/,/etc/nginx/,/etc/httpd24/
 " -----------------------------------------------------------------------------------------------
 
 " Plugin Loader - Vim Plug - https://github.com/junegunn/vim-plug
-" auto-install on new environments
-" for local user installation, uncomment the following two lines
-" if empty(glob('~/.vim/autoload/plug.vim'))
-" silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-" to install vim-plu globally
-
-" Automatic installation
-" https://github.com/junegunn/vim-plug/wiki/faq#automatic-installation
+" Automatic installation - https://github.com/junegunn/vim-plug/wiki/faq#automatic-installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -109,8 +100,6 @@ endif
 " plugins
 " for local user 
 call plug#begin('~/.vim/plugged')
-" to install plugins globally
-" call plug#begin('/etc/vim/plugged')
 
 Plug 'https://github.com/timakro/vim-searchant.git'
 Plug 'https://github.com/jiangmiao/auto-pairs'
@@ -142,9 +131,11 @@ let loaded_matchparen = 1
 " set nu "number
 " set cursorline
 " -----------------------------------------------------------------------------------------------
+
 "  Set encoding
 scriptencoding utf-8
 set encoding=utf-8
+
 " -----------------------------------------------------------------------------------------------
 
 " 2017-10-09
@@ -156,7 +147,7 @@ set nojoinspaces
 " -----------------------------------------------------------------------------------------------
 
 " file detection for nginx
-" Source: http://www.vim.org/scripts/script.php?script_id=1886
+" ref: http://www.vim.org/scripts/script.php?script_id=1886
 " v1 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &ft == '' | setfiletype nginx | endif 
 au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/*,/home/client/sites/*nginx*.conf,/home/web/sites/*nginx*.conf if &ft == '' | setfiletype nginx | endif
 
