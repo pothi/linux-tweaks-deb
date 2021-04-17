@@ -33,3 +33,5 @@ alias findinphp="find ./ -type f -iname '*.php' -print0 | xargs -0 grep -inr"
 
 # grep
 alias grep='grep --color=auto'
+
+alias pwgen='/usr/bin/pwgen -cnsyBv'
