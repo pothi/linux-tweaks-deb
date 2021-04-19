@@ -17,13 +17,13 @@ alias lla='lal'
 alias llh='ll'
 
 # curl
-alias curld='echo; echo "curl Desktop"; echo; /usr/bin/curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:54.0) Gecko/20100101 Firefox/54.0"'
-alias curlm='echo; echo "curl Mobile"; echo; /usr/bin/curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"'
-alias curlt='echo; echo "curl Tablet"; echo; /usr/bin/curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPad; CPU iPad OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"'
-alias curll='curl -L'
+alias curld='printf '\n%s\n\n' "echo Desktop"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:54.0) Gecko/20100101 Firefox/54.0"'
+alias curlm='printf '\n%s\n\n' "echo Mobile"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"'
+alias curlt='printf '\n%s\n\n' "echo Tablet"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPad; CPU iPad OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"'
+alias curll='\curl -L'
 
 # Dig aliases
-alias digs='dig +short +noshort'
+alias dig='\dig +short +noshort'
 
 # PHP
 alias findinphp="find ./ -type f -iname '*.php' -print0 | xargs -0 grep -inr"
@@ -33,6 +33,6 @@ alias findinphp="find ./ -type f -iname '*.php' -print0 | xargs -0 grep -inr"
 # alias echopath="echo $PATH | sed 's/:/\'$'\n/g'"
 
 # grep
-alias grep='grep --color=auto'
+alias grep='\grep --color=auto'
 
-alias pwgen='/usr/bin/pwgen -cnsyBv'
+alias pwgen='\pwgen -cnsyBv'
