@@ -1,7 +1,5 @@
-# older at top
-
-# to be removed in the future
-# alias sed='sed --follow-symlinks'
+# https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/c1195.htm
+# /(backslash) - The backslash escape character can be used before a shell command to override any aliases.
 
 # ls
 [[ $IS_MAC = 1 ]] && alias ls='ls -F -G'
