@@ -15,9 +15,9 @@ alias lla='lal'
 alias llh='ll'
 
 # curl
-alias curl='printf "\n%s\n\n" "User-agent: Desktop"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:54.0) Gecko/20100101 Firefox/54.0"'
-alias curlm='printf "\n%s\n\n" "User-agent: Mobile"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"'
-alias curlt='printf "\n%s\n\n" "User-agent: Tablet"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPad; CPU iPad OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4"'
+alias curl='printf "\n%s\n\n" "User-agent: Desktop"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:88.0) Gecko/20100101 Firefox/88.0"'
+alias curlm='printf "\n%s\n\n" "User-agent: Mobile"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1"'
+alias curlt='printf "\n%s\n\n" "User-agent: Tablet"; \curl -H "Accept-Encoding:gzip,deflate,br" -s -D- -o /dev/null -A "Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1"'
 alias curll='\curl -L'
 
 # Dig aliases
