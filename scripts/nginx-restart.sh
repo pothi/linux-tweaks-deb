@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# nginx restart script for certbot
+
+# version 1.0
+# date: 2021-04-22
+
 # programming env: these switches turn some bugs into errors
 set -o errexit -o pipefail -o noclobber -o nounset
 # set -x
