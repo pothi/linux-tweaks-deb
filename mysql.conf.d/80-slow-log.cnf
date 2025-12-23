@@ -1,4 +1,8 @@
-### https://mariadb.com/kb/en/library/slow-query-log-overview/
+### Links
+# https://mariadb.com/kb/en/library/slow-query-log-overview/
+# https://dev.mysql.com/doc/refman/en/slow-query-log.html
+# https://dev.mysql.com/doc/refman/en/mysqldumpslow.html
+# cPanel: https://support.cpanel.net/hc/en-us/articles/360052538914
 
 # in order to make the settings mentioned in this file to take higher precedence...
 # make sure you give higher number such as 99-slow.cnf
